@@ -24,10 +24,20 @@
     // This is similar to ReactDOM.createRoot().render()
     // rootElement.append(element)
 
-    const element = React.createElement('div', {
-      children: 'Hello World',
-      className: 'container',
+    const span1 = React.createElement('span', {
+      children: 'Hello',
     })
+
+    const span2 = React.createElement('span', {
+      children: 'World',
+    })
+
+    const element = React.createElement(
+      'div',
+      {className: 'container'},
+      span1,
+      span2,
+    )
 
     // 🐨 Please re-implement the regular document.createElement code above
     // with these React API calls
