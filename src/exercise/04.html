@@ -9,15 +9,15 @@
   <script type="text/babel">
     // 🐨 Make a function called `message` which returns the JSX we want to share
 
-    function message({children}) {
+    function Message({children}) {
       return <div className="message">{children}</div>
     }
 
     function fullMessage() {
       return (
         <div className="container">
-          {React.createElement(message, {children: 'Hello World'})}
-          {React.createElement(message, {children: 'Goodbye World'})}
+          <Message children="Hello World"></Message>
+          <Message children="Goodbye World"></Message>
         </div>
       )
     }
